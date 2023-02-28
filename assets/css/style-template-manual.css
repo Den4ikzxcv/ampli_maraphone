@@ -1,6 +1,6 @@
 :root {
-  --main-color: #3C4821DE;
-  --second-color: #48630cde;
+  --main-color: #ffc107;
+  --second-color: #ffce3a;
 }
 
 /*--------------------------------------------------------------
@@ -10,11 +10,9 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #b2d665de;
+  color: var(--main-color);
 }
-.navbar li {
-  font-weight: 800;
-}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -33,10 +31,6 @@ a:hover {
   text-decoration: none;
 }
 
-h2 {
-  color: var(--main-color);
-}
-
 img {
   border-radius: 4px;
 }
@@ -44,7 +38,7 @@ img {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: var(--main-color);
+  background: rgba(55, 64, 85, 0.9);
 }
 
 #header.header-transparent {
@@ -52,7 +46,7 @@ img {
 }
 
 #header.header-scrolled {
-  background: var(--main-color);
+  background: rgba(55, 64, 85, 0.9);
 }
 .section-title h2::after {
   background: var(--main-color);
@@ -62,7 +56,7 @@ img {
 # About
 --------------------------------------------------------------*/
 .about h3 {
-  color: var(--main-color);
+  color: #414c64;
 }
 
 .about-galery img {
@@ -79,27 +73,27 @@ width: 100%;
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/images-ready/hero-bg.jpg") top center;
+  background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/img/hero-bg.jpg") top center;
 }
 
 #hero .btn-get-started {
-  background: var(--main-color);
+  border: 2px solid var(--main-color);
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: var(--second-color);;
+  background: var(--second-color);
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: var(--main-color);
+  background: #414c64;
 }
 
 .cta .cta-btn {
-  background: var(--main-color);
+  border: 2px solid var(--main-color);
   color: #fff;
 }
 
@@ -156,7 +150,7 @@ width: 100%;
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: var(--main-color);   
+  color: #444444; 
 }
 
 .contact .info-box i {
@@ -168,9 +162,9 @@ width: 100%;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: white;
+  color: #414c64;
   font-size: 14px;
-  background: var(--main-color);
+  background: #f4f5f8;
 }
 
 #footer .footer-top {
@@ -187,16 +181,12 @@ width: 100%;
 }
 
 #footer .social-links a {
-  color: #dbff85de;
-  background: var(--main-color);
+  background: #e1e4ec;
+  color: #5f6f92;
 }
 
 #footer .social-links a:hover {
   background: var(--second-color);
-}
-
-#footer a {
-  color: #dbff85de;
 }
 
 #footer .footer-top .footer-links ul i {
