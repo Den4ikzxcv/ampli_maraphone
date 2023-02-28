@@ -82,7 +82,7 @@ width: 100%;
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("F:\\Download\\ampli\\maraphone\\assets\\images-ready\\hero-bg.jpg") top center;
+  background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/images-ready/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
