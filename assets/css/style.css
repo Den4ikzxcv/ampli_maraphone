@@ -1040,7 +1040,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #414c64;
+  /* color: #414c64; */
 }
 
 .team .member .member-info span {
