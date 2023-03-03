@@ -5,19 +5,7 @@
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu 
---------------------------------------------------------------*/
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #b2d665de;
-}
-.navbar li {
-  font-weight: 800;
-}
-/*--------------------------------------------------------------
-# General
+# General - Загальні стилі
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -41,8 +29,13 @@ h2 {
 img {
   border-radius: 4px;
 }
+
+/* Колір позаду секцій */
+.section-bg {
+  background-color: #f7f8fa;
+}
 /*--------------------------------------------------------------
-# Header
+# Header - Секція з меню
 --------------------------------------------------------------*/
 #header {
   background: var(--main-color);
@@ -58,16 +51,25 @@ img {
 .section-title h2::after {
   background: var(--main-color);
 }
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #b2d665de;
+}
+.navbar li {
+  font-weight: 800;
+}
 
 /*--------------------------------------------------------------
-# About
+# About  - Секція "Про нас"
 --------------------------------------------------------------*/
 .about h3 {
   color: var(--main-color);
 }
 
 .about-galery img {
-width: 100%;
+ width: 100%;
 }
 
 @media only screen and (max-width : 768px) {
@@ -77,7 +79,7 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section - Головная секція
 --------------------------------------------------------------*/
 #hero {
   background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/images-ready/hero-bg.jpg") top center;
@@ -93,7 +95,7 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Cta
+# Cta - Секція "Зателефонувати"
 --------------------------------------------------------------*/
 .cta {
   background: var(--main-color);
@@ -109,7 +111,7 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Portfolio - Секція портфоліо
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
@@ -158,14 +160,14 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Team
+# Team - Секція команди 
 --------------------------------------------------------------*/
 .team .member .member-info h4 {
   color:  var(--main-color);
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contact - Секція "контакти" 
 --------------------------------------------------------------*/
 .contact .info-box {
   color: var(--main-color);   
@@ -177,7 +179,25 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Form - Форма контакту
+--------------------------------------------------------------*/
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--second-color);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Footer - Низ сайту з додатковою інформацією
 --------------------------------------------------------------*/
 #footer {
   color: var(--main-color);;
@@ -227,7 +247,7 @@ width: 100%;
   color: var(--link-contrast-color);
 }
 /*--------------------------------------------------------------
-# Menu item name
+# Menu item name - Для тексту що відображується зниу при відкритті зображень
 --------------------------------------------------------------*/
 .glightbox-clean .gslide-title {
   font-family: "Open Sans", sans-serif;
@@ -238,7 +258,7 @@ width: 100%;
   line-height: 1.4em;
 }
 /*--------------------------------------------------------------
-# Back to top button
+# Back to top button - Кнопка повернення вгору
 --------------------------------------------------------------*/
 .back-to-top {
   background: var(--main-color)

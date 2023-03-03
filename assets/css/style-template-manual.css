@@ -1,20 +1,11 @@
 :root {
   --main-color: #ffc107;
   --second-color: #ffce3a;
+  --link-contrast-color: #5f6f92;
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu 
---------------------------------------------------------------*/
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: var(--main-color);
-}
-
-/*--------------------------------------------------------------
-# General
+# General - Загальні стилі
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -31,11 +22,20 @@ a:hover {
   text-decoration: none;
 }
 
+/* h2 {
+  color: var(--main-color);
+} */
+
 img {
   border-radius: 4px;
 }
+
+/* Колір позаду секцій */
+.section-bg {
+  background-color: #f7f8fa;
+}
 /*--------------------------------------------------------------
-# Header
+# Header  - Секція з меню
 --------------------------------------------------------------*/
 #header {
   background: rgba(55, 64, 85, 0.9);
@@ -52,15 +52,22 @@ img {
   background: var(--main-color);
 }
 
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: var(--main-color);
+}
+
 /*--------------------------------------------------------------
-# About
+# About - Секція "Про нас"
 --------------------------------------------------------------*/
 .about h3 {
   color: #414c64;
 }
 
 .about-galery img {
-width: 100%;
+ width: 100%;
 }
 
 @media only screen and (max-width : 768px) {
@@ -70,7 +77,15 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Counts - Секція "Лічильники"
+--------------------------------------------------------------*/
+
+.counts .counters span {
+  color: #414c64;
+}
+
+/*--------------------------------------------------------------
+# Hero Section - Головная секція
 --------------------------------------------------------------*/
 #hero {
   background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/img/hero-bg.jpg") top center;
@@ -86,7 +101,7 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Cta
+# Cta - Секція "Зателефонувати"
 --------------------------------------------------------------*/
 .cta {
   background: #414c64;
@@ -102,7 +117,7 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Portfolio - Секція портфоліо
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
@@ -122,6 +137,10 @@ width: 100%;
 .menu-meat {
   width: 30px; 
   height: 30px;
+}
+
+.meat-padding {
+  padding-left: 6px;
 }
 
 .hot {
@@ -147,7 +166,65 @@ width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Testimonials - Секція відгуків
+--------------------------------------------------------------*/
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: var(--second-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+/*--------------------------------------------------------------
+# Team - Секція команди 
+--------------------------------------------------------------*/
+/* .team .member .member-info h4 {
+  color:  var(--main-color);
+} */
+
+/*--------------------------------------------------------------
+# Pricing - Секція цін
+--------------------------------------------------------------*/
+.pricing h4 {
+  color: var(--main-color);
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.pricing .featured .btn-buy {
+  background: var(--main-color);
+  color: #fff;
+  border: 2px solid var(--main-color);
+}
+
+.pricing .featured .btn-buy:hover {
+  background: var(--second-color);
+}
+
+.pricing .advanced {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions - Секція питаннь що часто задаються
+--------------------------------------------------------------*/
+.faq .faq-list .icon-help {
+  color: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Contact - Секція "контакти" 
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444; 
@@ -155,11 +232,29 @@ width: 100%;
 
 .contact .info-box i {
   color: var(--main-color);
-  border: 2px dotted var(--second-color);;
+  border: 2px dotted var(--second-color);
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Form - Форма контакту
+--------------------------------------------------------------*/
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--second-color);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Footer - Низ сайту з додатковою інформацією
 --------------------------------------------------------------*/
 #footer {
   color: #414c64;
@@ -182,11 +277,15 @@ width: 100%;
 
 #footer .social-links a {
   background: #e1e4ec;
-  color: #5f6f92;
+  color: var(--link-contrast-color);
 }
 
 #footer .social-links a:hover {
   background: var(--second-color);
+}
+
+#footer a {
+  color: var(--link-contrast-color);
 }
 
 #footer .footer-top .footer-links ul i {
@@ -196,8 +295,16 @@ width: 100%;
 #footer .footer-top .footer-links ul a:hover { 
   color: var(--second-color);
 }
+
+#footer .credits {
+  color: var(--link-contrast-color);
+}
+
+#footer .copyright {
+  color: var(--link-contrast-color);
+}
 /*--------------------------------------------------------------
-# Menu item name
+# Menu item name - Для тексту що відображується зниу при відкритті зображень
 --------------------------------------------------------------*/
 .glightbox-clean .gslide-title {
   font-family: "Open Sans", sans-serif;
@@ -208,7 +315,7 @@ width: 100%;
   line-height: 1.4em;
 }
 /*--------------------------------------------------------------
-# Back to top button
+# Back to top button - Кнопка повернення вгору
 --------------------------------------------------------------*/
 .back-to-top {
   background: var(--main-color)
